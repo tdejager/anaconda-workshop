@@ -1,33 +1,72 @@
 <template>
-  <svg width="620" height="140" viewBox="0 0 620 140" class="sparkline-chart">
-    <line x1="50" y1="95" x2="580" y2="95" stroke="#e0d8c8" stroke-width="1"/>
-    <rect x="60"  y="80" width="48" height="15" fill="#c4a882" rx="2"/>
-    <rect x="125" y="72" width="48" height="23" fill="#c4a882" rx="2"/>
-    <rect x="190" y="62" width="48" height="33" fill="#c4a882" rx="2"/>
-    <rect x="255" y="45" width="48" height="50" fill="#b08860" rx="2"/>
-    <rect x="320" y="38" width="48" height="57" fill="#b08860" rx="2"/>
-    <rect x="385" y="55" width="48" height="40" fill="#c4a882" rx="2"/>
-    <rect x="450" y="60" width="48" height="35" fill="#c4a882" rx="2"/>
-    <rect x="515" y="30" width="48" height="65" fill="#a00000" rx="2"/>
-    <text x="84"  y="115" text-anchor="middle" style="font-size:12px!important;line-height:normal!important;font-family:'IBM Plex Mono',monospace!important;" fill="#666">init</text>
-    <text x="149" y="115" text-anchor="middle" style="font-size:12px!important;line-height:normal!important;font-family:'IBM Plex Mono',monospace!important;" fill="#666">search</text>
-    <text x="214" y="115" text-anchor="middle" style="font-size:12px!important;line-height:normal!important;font-family:'IBM Plex Mono',monospace!important;" fill="#666">add</text>
-    <text x="279" y="115" text-anchor="middle" style="font-size:12px!important;line-height:normal!important;font-family:'IBM Plex Mono',monospace!important;" fill="#666">lock</text>
-    <text x="344" y="115" text-anchor="middle" style="font-size:12px!important;line-height:normal!important;font-family:'IBM Plex Mono',monospace!important;" fill="#666">install</text>
-    <text x="409" y="115" text-anchor="middle" style="font-size:12px!important;line-height:normal!important;font-family:'IBM Plex Mono',monospace!important;" fill="#666">shell</text>
-    <text x="474" y="115" text-anchor="middle" style="font-size:12px!important;line-height:normal!important;font-family:'IBM Plex Mono',monospace!important;" fill="#666">run</text>
-    <text x="539" y="115" text-anchor="middle" style="font-size:12px!important;line-height:normal!important;font-family:'IBM Plex Mono',monospace!important;" fill="#666">build</text>
+  <svg width="570" height="130" viewBox="0 0 570 130" class="sparkline-chart">
+    <!-- init -->
+    <rect x="10" y="72" width="44" height="7" fill="#999"/>
+    <rect x="10" y="81" width="44" height="6" fill="#999"/>
+    <!-- search -->
+    <rect x="75" y="64" width="44" height="7" fill="#999"/>
+    <rect x="75" y="73" width="44" height="6" fill="#999"/>
+    <rect x="75" y="81" width="44" height="6" fill="#999"/>
+    <!-- add -->
+    <rect x="140" y="54" width="44" height="7" fill="#999"/>
+    <rect x="140" y="63" width="44" height="7" fill="#999"/>
+    <rect x="140" y="72" width="44" height="7" fill="#999"/>
+    <rect x="140" y="81" width="44" height="6" fill="#999"/>
+    <!-- lock -->
+    <rect x="205" y="37" width="44" height="7" fill="#888"/>
+    <rect x="205" y="46" width="44" height="7" fill="#888"/>
+    <rect x="205" y="55" width="44" height="6" fill="#888"/>
+    <rect x="205" y="63" width="44" height="7" fill="#888"/>
+    <rect x="205" y="72" width="44" height="7" fill="#888"/>
+    <rect x="205" y="81" width="44" height="6" fill="#888"/>
+    <!-- install -->
+    <rect x="270" y="30" width="44" height="7" fill="#888"/>
+    <rect x="270" y="39" width="44" height="6" fill="#888"/>
+    <rect x="270" y="47" width="44" height="6" fill="#888"/>
+    <rect x="270" y="55" width="44" height="6" fill="#888"/>
+    <rect x="270" y="63" width="44" height="7" fill="#888"/>
+    <rect x="270" y="72" width="44" height="7" fill="#888"/>
+    <rect x="270" y="81" width="44" height="6" fill="#888"/>
+    <!-- shell -->
+    <rect x="335" y="47" width="44" height="6" fill="#999"/>
+    <rect x="335" y="55" width="44" height="6" fill="#999"/>
+    <rect x="335" y="63" width="44" height="7" fill="#999"/>
+    <rect x="335" y="72" width="44" height="7" fill="#999"/>
+    <rect x="335" y="81" width="44" height="6" fill="#999"/>
+    <!-- run -->
+    <rect x="400" y="52" width="44" height="7" fill="#999"/>
+    <rect x="400" y="61" width="44" height="7" fill="#999"/>
+    <rect x="400" y="72" width="44" height="7" fill="#999"/>
+    <rect x="400" y="81" width="44" height="6" fill="#999"/>
+    <!-- build -->
+    <rect x="465" y="22" width="44" height="7" fill="#a00000"/>
+    <rect x="465" y="31" width="44" height="6" fill="#a00000"/>
+    <rect x="465" y="39" width="44" height="6" fill="#a00000"/>
+    <rect x="465" y="47" width="44" height="6" fill="#a00000"/>
+    <rect x="465" y="55" width="44" height="6" fill="#a00000"/>
+    <rect x="465" y="63" width="44" height="7" fill="#a00000"/>
+    <rect x="465" y="72" width="44" height="7" fill="#a00000"/>
+    <rect x="465" y="81" width="44" height="6" fill="#a00000"/>
+    <!-- Labels -->
+    <text x="32"  y="102" text-anchor="middle" style="font-size:12px!important;font-family:'IBM Plex Mono',monospace!important;line-height:normal!important;" fill="#888">init</text>
+    <text x="97"  y="102" text-anchor="middle" style="font-size:12px!important;font-family:'IBM Plex Mono',monospace!important;line-height:normal!important;" fill="#888">search</text>
+    <text x="162" y="102" text-anchor="middle" style="font-size:12px!important;font-family:'IBM Plex Mono',monospace!important;line-height:normal!important;" fill="#888">add</text>
+    <text x="227" y="102" text-anchor="middle" style="font-size:12px!important;font-family:'IBM Plex Mono',monospace!important;line-height:normal!important;" fill="#888">lock</text>
+    <text x="292" y="102" text-anchor="middle" style="font-size:12px!important;font-family:'IBM Plex Mono',monospace!important;line-height:normal!important;" fill="#888">install</text>
+    <text x="357" y="102" text-anchor="middle" style="font-size:12px!important;font-family:'IBM Plex Mono',monospace!important;line-height:normal!important;" fill="#888">shell</text>
+    <text x="422" y="102" text-anchor="middle" style="font-size:12px!important;font-family:'IBM Plex Mono',monospace!important;line-height:normal!important;" fill="#888">run</text>
+    <text x="487" y="102" text-anchor="middle" style="font-size:12px!important;font-family:'IBM Plex Mono',monospace!important;line-height:normal!important;" fill="#a00000">build</text>
   </svg>
 </template>
 
 <style scoped>
 .sparkline-chart {
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
   display: block;
 }
 .sparkline-chart text {
   font-size: 12px !important;
-  line-height: normal !important;
   font-family: 'IBM Plex Mono', monospace !important;
+  line-height: normal !important;
 }
 </style>

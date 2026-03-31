@@ -312,9 +312,9 @@ $ shot run lua -e "require('lumen')"
 
 <!-- Slide 4: What you will build -->
 
-# <span class="newthought">What you will build</span>
+# <span class="newthought">What the book builds</span>
 
-The book implements **moonshot** command by command:
+The book implements **moonshot**:
 
 <ul class="chapter-list mt-4">
   <li><span class="ch">03</span> <code>init</code> · scaffold a project manifest</li>
@@ -335,7 +335,7 @@ The book implements **moonshot** command by command:
 
 # <span class="newthought">Exercises</span>
 
-Each chapter (3 through 10) has **3 exercises** graded by difficulty. 24 exercises total.
+Each chapter (3 through 10) has **3 exercises** graded by difficulty.
 
 <table class="exercise-table mt-6">
   <tr>

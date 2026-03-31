@@ -1,0 +1,86 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e8]:
+        - heading "Pick your interest" [level=1] [ref=e9]
+        - paragraph [ref=e10]: Not every chapter appeals to everyone. Here is a rough map of what covers what.
+        - generic [ref=e11]:
+          - generic [ref=e12]:
+            - paragraph [ref=e13]:
+              - strong [ref=e14]: CLI and manifest work
+              - text: (ch 3, 5)
+            - list [ref=e15]:
+              - listitem [ref=e16]: Parsing TOML with Serde
+              - listitem [ref=e17]: MatchSpec validation
+              - listitem [ref=e18]: Wiring clap CLI flags
+            - paragraph [ref=e19]:
+              - strong [ref=e20]: Repodata and networking
+              - text: (ch 4, 5)
+            - list [ref=e21]:
+              - listitem [ref=e22]: Querying channels through the Gateway
+              - listitem [ref=e23]: Platform-specific packages
+              - listitem [ref=e24]: Version comparison
+          - generic [ref=e25]:
+            - paragraph [ref=e26]:
+              - strong [ref=e27]: Solving and locking
+              - text: (ch 6)
+            - list [ref=e28]:
+              - listitem [ref=e29]: The Resolvo SAT solver
+              - listitem [ref=e30]: Virtual package overrides
+              - listitem [ref=e31]: Lock file diffing
+            - paragraph [ref=e32]:
+              - strong [ref=e33]: Installation and environments
+              - text: (ch 7, 8, 9)
+            - list [ref=e34]:
+              - listitem [ref=e35]: Prefix records, hard-linking
+              - listitem [ref=e36]: Shell activation scripts
+              - listitem [ref=e37]: Running commands inside environments
+            - paragraph [ref=e38]:
+              - strong [ref=e39]: Building packages
+              - text: (ch 10)
+            - list [ref=e40]:
+              - listitem [ref=e41]:
+                - text: The
+                - code [ref=e42]: .conda
+                - text: archive format
+              - listitem [ref=e43]: Build scripts, metadata, variants
+      - img
+    - navigation [ref=e45]:
+      - generic [ref=e46]:
+        - button "Enter fullscreen" [ref=e47] [cursor=pointer]:
+          - generic [ref=e48]: Enter fullscreen
+        - button "Go to previous slide" [ref=e50] [cursor=pointer]:
+          - generic [ref=e51]: Go to previous slide
+        - button "Go to next slide" [ref=e53] [cursor=pointer]:
+          - generic [ref=e54]: Go to next slide
+        - button "Show slide overview" [ref=e56] [cursor=pointer]:
+          - generic [ref=e57]: Show slide overview
+        - button "Switch to dark mode theme" [ref=e59] [cursor=pointer]:
+          - generic [ref=e60]: Switch to dark mode theme
+          - img [ref=e61]
+        - button "Toggle camera view" [ref=e64] [cursor=pointer]:
+          - generic [ref=e65]: Toggle camera view
+        - button "Record video" [ref=e67] [cursor=pointer]:
+          - generic [ref=e68]: Record video
+        - button "Select recording device" [ref=e71] [cursor=pointer]:
+          - button "Select recording device" [ref=e72]:
+            - generic [ref=e73]: Select recording device
+        - button "Show drawing toolbar" [ref=e76] [cursor=pointer]:
+          - generic [ref=e77]: Show drawing toolbar
+        - button "Presenter Mode" [ref=e80] [cursor=pointer]:
+          - generic [ref=e81]: Presenter Mode
+        - button "Show editor" [ref=e83] [cursor=pointer]:
+          - generic [ref=e84]: Show editor
+        - link "Browser Exporter" [ref=e86] [cursor=pointer]:
+          - /url: /export
+          - generic [ref=e87]: Browser Exporter
+        - button "Show info" [ref=e89] [cursor=pointer]:
+          - generic [ref=e90]: Show info
+        - button "Change sync settings" [ref=e94] [cursor=pointer]:
+          - button "Change sync settings" [ref=e95]:
+            - generic [ref=e96]: Change sync settings
+        - button "More Options" [ref=e100] [cursor=pointer]:
+          - button "More Options" [ref=e101]:
+            - generic [ref=e102]: More Options
+        - generic [ref=e105]: 6 / 14
+  - textbox "Goto..." [disabled] [ref=e108]

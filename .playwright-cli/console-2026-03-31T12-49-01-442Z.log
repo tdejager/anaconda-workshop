@@ -1,0 +1,6 @@
+Total messages: 29 (Errors: 3, Warnings: 0)
+Returning 3 messages for level "info"
+
+[ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3030/slides.md__slidev_10.md?import:0
+[ERROR] slide failed to load TypeError: Failed to fetch dynamically imported module: http://localhost:3030/@slidev/slides/10/md @ http://localhost:3030/@slidev/slides:59
+[ERROR] slide failed to load TypeError: Failed to fetch dynamically imported module: http://localhost:3030/@slidev/slides/10/md @ http://localhost:3030/@slidev/slides:59

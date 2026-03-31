@@ -1,0 +1,752 @@
+- generic [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: https://prefix-dev.github.io/rattler-book/introduction/#introduction
+  - banner [ref=e3]:
+    - navigation "Header" [ref=e4]:
+      - link "The Rattler Book" [ref=e5] [cursor=pointer]:
+        - /url: https://prefix-dev.github.io/rattler-book/
+        - img "logo" [ref=e6]
+      - generic [ref=e8]:
+        - generic [ref=e10]: The Rattler Book
+        - generic:
+          - generic: Introduction
+      - button "Focus mode" [ref=e11] [cursor=pointer]:
+        - img [ref=e12]
+      - button "Browse source code" [expanded] [ref=e14] [cursor=pointer]: </>
+      - generic [ref=e15]:
+        - radio "Switch to dark mode"
+        - generic "Switch to dark mode" [ref=e16] [cursor=pointer]:
+          - img [ref=e17]
+        - radio "Switch to light mode"
+      - dialog [ref=e19]:
+        - search [ref=e20]:
+          - generic [ref=e21]:
+            - textbox "Search" [ref=e22]
+            - generic:
+              - img
+            - navigation "Search":
+              - link "Share":
+                - /url: https://prefix-dev.github.io/rattler-book/introduction/?q=
+                - img
+              - button "Clear":
+                - img
+          - generic [ref=e25]: Type to start searching
+      - link "prefix-dev/rattler-book 4 0" [ref=e27] [cursor=pointer]:
+        - /url: https://github.com/prefix-dev/rattler-book
+        - img [ref=e29]
+        - generic [ref=e31]:
+          - text: prefix-dev/rattler-book
+          - list [ref=e32]:
+            - listitem [ref=e33]: "4"
+            - listitem [ref=e34]: "0"
+  - generic [ref=e35]:
+    - main [ref=e36]:
+      - generic [ref=e37]:
+        - navigation "Navigation" [ref=e41]:
+          - generic [ref=e42]: The Rattler Book
+          - list [ref=e43]:
+            - listitem [ref=e44]:
+              - link "Cover" [ref=e45] [cursor=pointer]:
+                - /url: https://prefix-dev.github.io/rattler-book/
+                - generic [ref=e46]: Cover
+            - listitem [ref=e47]:
+              - link "Introduction" [ref=e48] [cursor=pointer]:
+                - /url: https://prefix-dev.github.io/rattler-book/introduction/
+                - generic [ref=e49]: Introduction
+              - navigation "Table of contents" [ref=e50]:
+                - list [ref=e51]:
+                  - listitem [ref=e52]:
+                    - link "Who this is for" [ref=e53] [cursor=pointer]:
+                      - /url: https://prefix-dev.github.io/rattler-book/introduction/#who-this-is-for
+                      - generic [ref=e54]: Who this is for
+                  - listitem [ref=e55]:
+                    - link "Who am I?" [ref=e56] [cursor=pointer]:
+                      - /url: https://prefix-dev.github.io/rattler-book/introduction/#who-am-i
+                      - generic [ref=e57]: Who am I?
+                  - listitem [ref=e58]:
+                    - link "How this book is organized" [ref=e59] [cursor=pointer]:
+                      - /url: https://prefix-dev.github.io/rattler-book/introduction/#how-this-book-is-organized
+                      - generic [ref=e60]: How this book is organized
+                  - listitem [ref=e61]:
+                    - link "Note on Generative AI usage" [ref=e62] [cursor=pointer]:
+                      - /url: https://prefix-dev.github.io/rattler-book/introduction/#note-on-generative-ai-usage
+                      - generic [ref=e63]: Note on Generative AI usage
+                  - listitem [ref=e64]:
+                    - link "What we will build" [ref=e65] [cursor=pointer]:
+                      - /url: https://prefix-dev.github.io/rattler-book/introduction/#what-we-will-build
+                      - generic [ref=e66]: What we will build
+                  - listitem [ref=e67]:
+                    - link "Getting the source" [ref=e68] [cursor=pointer]:
+                      - /url: https://prefix-dev.github.io/rattler-book/introduction/#getting-the-source
+                      - generic [ref=e69]: Getting the source
+                  - listitem [ref=e70]:
+                    - link "Running the examples" [ref=e71] [cursor=pointer]:
+                      - /url: https://prefix-dev.github.io/rattler-book/introduction/#running-the-examples
+                      - generic [ref=e72]: Running the examples
+                    - navigation "Running the examples" [ref=e73]:
+                      - list [ref=e74]:
+                        - listitem [ref=e75]:
+                          - link "Without pixi" [ref=e76] [cursor=pointer]:
+                            - /url: https://prefix-dev.github.io/rattler-book/introduction/#without-pixi
+                            - generic [ref=e77]: Without pixi
+                  - listitem [ref=e78]:
+                    - link "Literate programming" [ref=e79] [cursor=pointer]:
+                      - /url: https://prefix-dev.github.io/rattler-book/introduction/#literate-programming
+                      - generic [ref=e80]: Literate programming
+                  - listitem [ref=e81]:
+                    - link "Why build on conda?" [ref=e82] [cursor=pointer]:
+                      - /url: https://prefix-dev.github.io/rattler-book/introduction/#why-build-on-conda
+                      - generic [ref=e83]: Why build on conda?
+                  - listitem [ref=e84]:
+                    - link "Exercises" [ref=e85] [cursor=pointer]:
+                      - /url: https://prefix-dev.github.io/rattler-book/introduction/#exercises
+                      - generic [ref=e86]: Exercises
+                    - navigation "Exercises" [ref=e87]:
+                      - list [ref=e88]:
+                        - listitem [ref=e89]:
+                          - link "Exercises with an AI tutor" [ref=e90] [cursor=pointer]:
+                            - /url: https://prefix-dev.github.io/rattler-book/introduction/#exercises-with-an-ai-tutor
+                            - generic [ref=e91]: Exercises with an AI tutor
+            - listitem [ref=e92]:
+              - generic:
+                - generic: Building a Package Manager
+              - navigation "Building a Package Manager" [ref=e93]:
+                - list [ref=e94]:
+                  - listitem [ref=e95]:
+                    - link "1. What Is a Package Manager?" [ref=e96] [cursor=pointer]:
+                      - /url: https://prefix-dev.github.io/rattler-book/ch01-what-is-a-package-manager/
+                      - generic [ref=e97]: 1. What Is a Package Manager?
+                  - listitem [ref=e98]:
+                    - link "2. Setting Up the Project" [ref=e99] [cursor=pointer]:
+                      - /url: https://prefix-dev.github.io/rattler-book/ch02-project-setup/
+                      - generic [ref=e100]: 2. Setting Up the Project
+                  - listitem [ref=e101]:
+                    - 'link "3. The `init` Command" [ref=e102] [cursor=pointer]':
+                      - /url: https://prefix-dev.github.io/rattler-book/ch03-init/
+                      - generic [ref=e103]: "3. The `init` Command"
+                  - listitem [ref=e104]:
+                    - 'link "4. The `search` Command" [ref=e105] [cursor=pointer]':
+                      - /url: https://prefix-dev.github.io/rattler-book/ch04-search/
+                      - generic [ref=e106]: "4. The `search` Command"
+                  - listitem [ref=e107]:
+                    - 'link "5. The `add` Command" [ref=e108] [cursor=pointer]':
+                      - /url: https://prefix-dev.github.io/rattler-book/ch05-add/
+                      - generic [ref=e109]: "5. The `add` Command"
+                  - listitem [ref=e110]:
+                    - 'link "6. The `lock` Command" [ref=e111] [cursor=pointer]':
+                      - /url: https://prefix-dev.github.io/rattler-book/ch06-lock/
+                      - generic [ref=e112]: "6. The `lock` Command"
+                  - listitem [ref=e113]:
+                    - 'link "7. The `install` Command" [ref=e114] [cursor=pointer]':
+                      - /url: https://prefix-dev.github.io/rattler-book/ch07-install/
+                      - generic [ref=e115]: "7. The `install` Command"
+                  - listitem [ref=e116]:
+                    - 'link "8. The `shell-hook` Command" [ref=e117] [cursor=pointer]':
+                      - /url: https://prefix-dev.github.io/rattler-book/ch08-shell-hook/
+                      - generic [ref=e118]: "8. The `shell-hook` Command"
+                  - listitem [ref=e119]:
+                    - 'link "9. The `run` Command" [ref=e120] [cursor=pointer]':
+                      - /url: https://prefix-dev.github.io/rattler-book/ch09-run/
+                      - generic [ref=e121]: "9. The `run` Command"
+                  - listitem [ref=e122]:
+                    - 'link "10. The `build` Command" [ref=e123] [cursor=pointer]':
+                      - /url: https://prefix-dev.github.io/rattler-book/ch10-build/
+                      - generic [ref=e124]: "10. The `build` Command"
+            - listitem [ref=e125]:
+              - generic:
+                - generic: Rattler and Conda Deep Dives
+              - navigation "Rattler and Conda Deep Dives" [ref=e126]:
+                - list [ref=e127]:
+                  - listitem [ref=e128]:
+                    - link "The conda Package Format" [ref=e129] [cursor=pointer]:
+                      - /url: https://prefix-dev.github.io/rattler-book/deep-dive-package-format/
+                      - generic [ref=e130]: The conda Package Format
+                  - listitem [ref=e131]:
+                    - link "Run Exports" [ref=e132] [cursor=pointer]:
+                      - /url: https://prefix-dev.github.io/rattler-book/deep-dive-run-exports/
+                      - generic [ref=e133]: Run Exports
+                  - listitem [ref=e134]:
+                    - link "Virtual Packages" [ref=e135] [cursor=pointer]:
+                      - /url: https://prefix-dev.github.io/rattler-book/deep-dive-virtual-packages/
+                      - generic [ref=e136]: Virtual Packages
+                  - listitem [ref=e137]:
+                    - link "The Networking Stack" [ref=e138] [cursor=pointer]:
+                      - /url: https://prefix-dev.github.io/rattler-book/deep-dive-networking/
+                      - generic [ref=e139]: The Networking Stack
+                  - listitem [ref=e140]:
+                    - 'link "The `resolvo` SAT Solver" [ref=e141] [cursor=pointer]':
+                      - /url: https://prefix-dev.github.io/rattler-book/deep-dive-resolvo/
+                      - generic [ref=e142]: "The `resolvo` SAT Solver"
+                  - listitem [ref=e143]:
+                    - link "The Build Script API" [ref=e144] [cursor=pointer]:
+                      - /url: https://prefix-dev.github.io/rattler-book/deep-dive-build-script-api/
+                      - generic [ref=e145]: The Build Script API
+                  - listitem [ref=e146]:
+                    - 'link "Overview of the `rattler` crates" [ref=e147] [cursor=pointer]':
+                      - /url: https://prefix-dev.github.io/rattler-book/deep-dive-crate-ecosystem/
+                      - generic [ref=e148]: "Overview of the `rattler` crates"
+                  - listitem [ref=e149]:
+                    - link "Adapting to Your Language" [ref=e150] [cursor=pointer]:
+                      - /url: https://prefix-dev.github.io/rattler-book/deep-dive-adapting/
+                      - generic [ref=e151]: Adapting to Your Language
+            - listitem [ref=e152]:
+              - link "Conclusion" [ref=e153] [cursor=pointer]:
+                - /url: https://prefix-dev.github.io/rattler-book/conclusion/
+                - generic [ref=e154]: Conclusion
+        - article [ref=e156]:
+          - heading "Introduction ¶" [level=1] [ref=e157]:
+            - text: Introduction
+            - link "¶" [ref=e158] [cursor=pointer]:
+              - /url: https://prefix-dev.github.io/rattler-book/introduction/#introduction
+          - paragraph [ref=e159]: This book teaches you how to build a package manager. A package manager automates finding, downloading, and installing software libraries so you don't have to track versions and dependencies by hand.
+          - paragraph [ref=e160]: "Here is what using the finished tool will look like:"
+          - generic [ref=e162]:
+            - navigation [ref=e163]:
+              - button "Copy to clipboard" [ref=e164] [cursor=pointer]
+            - code [ref=e165]: "$ shot init my-app --channel conda-forge --channel ../channel $ shot add lumen $ shot install 1523 repodata records loaded Solved 12 packages in 0.3s ✔ Wrote moonshot.lock (12 packages) ✔ Environment updated in 2.1s Activate with: eval $(shot shell-hook) $ shot run lua -e \"require('lumen').thumbnail('photo.jpg', 128)\""
+          - paragraph [ref=e166]:
+            - code [ref=e167]: lumen
+            - text: is a small Lua module we will build in
+            - link "Chapter 10" [ref=e168] [cursor=pointer]:
+              - /url: https://prefix-dev.github.io/rattler-book/ch10-build/
+            - text: . It wraps ImageMagick's command-line tool, which means it depends on a C library with dozens of native dependencies. The interesting part is not the Lua code itself, but that our package manager handles the entire native dependency chain. Where did
+            - code [ref=e169]: lumen
+            - text: "come from? We built it with moonshot's other headline command:"
+          - generic [ref=e171]:
+            - navigation [ref=e172]:
+              - button "Copy to clipboard" [ref=e173] [cursor=pointer]
+            - code [ref=e174]: "$ shot build --output-dir ../channel Building lumen 0.1.0 (build lua_0) → Installing 1 build dependencies… → Running build script `build.lua` → Packing 2 files… → Indexing channel at ../channel ✔ Built lumen-0.1.0-lua_0.conda package → ../channel/noarch/lumen-0.1.0-lua_0.conda channel → ../channel"
+          - paragraph [ref=e175]:
+            - text: By the end of this book, you will have built the tool that did all of that, on top of
+            - strong [ref=e176]:
+              - link "rattler" [ref=e177] [cursor=pointer]:
+                - /url: https://github.com/conda/rattler
+            - text: ", a library that implements the"
+            - link "conda" [ref=e178] [cursor=pointer]:
+              - /url: https://docs.conda.io/projects/conda/en/stable/
+            - text: package specification in pure Rust.
+          - heading "Who this is for ¶" [level=2] [ref=e179]:
+            - text: Who this is for
+            - link "¶" [ref=e180] [cursor=pointer]:
+              - /url: https://prefix-dev.github.io/rattler-book/introduction/#who-this-is-for
+          - paragraph [ref=e181]: "This book is aimed at programmers who:"
+          - list [ref=e182]:
+            - listitem [ref=e183]: Are curious about how package managers work under the hood.
+            - listitem [ref=e184]: Want to understand the rattler library and the conda package ecosystem.
+            - listitem [ref=e185]: Are considering building a package manager for their own programming language. Conda's language-agnostic format makes it a surprisingly good foundation.
+          - paragraph [ref=e186]:
+            - text: You don't need to know anything about conda, packaging, or the Lua programming language. We use
+            - link "Lua" [ref=e187] [cursor=pointer]:
+              - /url: https://www.lua.org
+            - text: (a lightweight scripting language commonly embedded in games and applications) as the target language because it's small and self-contained, but the techniques generalize to any ecosystem.
+          - heading "Who am I? ¶" [level=2] [ref=e188]:
+            - text: Who am I?
+            - link "¶" [ref=e189] [cursor=pointer]:
+              - /url: https://prefix-dev.github.io/rattler-book/introduction/#who-am-i
+          - paragraph [ref=e190]:
+            - text: This book was mostly produced by me,
+            - link "Tim de Jager" [ref=e191] [cursor=pointer]:
+              - /url: https://github.com/tdejager/
+            - text: . Make sure to read
+            - link "this" [ref=e192] [cursor=pointer]:
+              - /url: https://prefix-dev.github.io/rattler-book/introduction/#note-on-generative-ai-usage
+            - text: section though.
+          - paragraph [ref=e193]:
+            - text: I'm a main contributor on
+            - link "pixi" [ref=e194] [cursor=pointer]:
+              - /url: https://pixi.sh
+            - text: and
+            - link "rattler" [ref=e195] [cursor=pointer]:
+              - /url: https://github.com/conda/rattler
+            - text: and I work for
+            - link "prefix.dev" [ref=e196] [cursor=pointer]:
+              - /url: https://prefix.dev/
+            - text: . Previously I worked in both robotics and gaming before switching to package managing.
+          - paragraph [ref=e197]: We are very bullishly convinced that conda can serve as not only a good base for building libraries and applications, but also for package managers in general. A conda environment is basically an isolated linux-prefix! So we really wanted to start sharing this with the world.
+          - heading "How this book is organized ¶" [level=2] [ref=e198]:
+            - text: How this book is organized
+            - link "¶" [ref=e199] [cursor=pointer]:
+              - /url: https://prefix-dev.github.io/rattler-book/introduction/#how-this-book-is-organized
+          - paragraph [ref=e200]:
+            - strong [ref=e201]: Part I
+            - text: will build
+            - code [ref=e202]: moonshot
+            - text: "from scratch. Each chapter will implement one command from start to finish. Mostly following the following order: first the design, then configuration changes, then concepts, then implementation."
+          - paragraph [ref=e203]:
+            - strong [ref=e204]: Part II
+            - text: "allows you to dive deeper into the rattler library itself: the package format, the SAT solver, the networking stack. These chapters stand alone, you can read them in any order."
+          - heading "Note on Generative AI usage ¶" [level=2] [ref=e205]:
+            - text: Note on Generative AI usage
+            - link "¶" [ref=e206] [cursor=pointer]:
+              - /url: https://prefix-dev.github.io/rattler-book/introduction/#note-on-generative-ai-usage
+          - paragraph [ref=e207]: "Generative AI, specifically: Claude Opus, was extensively used in the production of this book and to verify that the exercises can be completed. Claude has also been used for writing initial drafts of both code and prose. I did try to set my own rules for Claude to follow and I have done, many, many iterations on the generated text alone and with Claude. All text was heavily edited, appended, and changed by myself to make it as concise as possible."
+          - paragraph [ref=e208]: I want to be honest w.r.t to this fact so that you as a reader can decide for yourself how to proceed. This section has been written entirely by hand. Any other way would feel disingenuous to me.
+          - heading "What we will build ¶" [level=2] [ref=e209]:
+            - text: What we will build
+            - link "¶" [ref=e210] [cursor=pointer]:
+              - /url: https://prefix-dev.github.io/rattler-book/introduction/#what-we-will-build
+          - paragraph [ref=e211]:
+            - text: We are going to build
+            - code [ref=e212]: moonshot
+            - text: ", a minimal Lua package manager. By the final chapter it will be able to:"
+          - generic [ref=e214]:
+            - navigation [ref=e215]:
+              - button "Copy to clipboard" [ref=e216] [cursor=pointer]
+            - code [ref=e217]: "$ shot init my-app # scaffold a new project $ shot add lua \">=5.4\" # add dependencies $ shot install # fetch, solve, and install $ shot shell-hook # activate the environment $ shot run lua script.lua # run inside the environment $ shot build # build a distributable package"
+          - paragraph [ref=e218]:
+            - text: The full source code lives in the
+            - code [ref=e219]: src/
+            - text: directory alongside this book in the
+            - link "rattler-book repository" [ref=e220] [cursor=pointer]:
+              - /url: https://github.com/prefix-dev/rattler-book
+            - text: .
+          - heading "Getting the source ¶" [level=2] [ref=e221]:
+            - text: Getting the source
+            - link "¶" [ref=e222] [cursor=pointer]:
+              - /url: https://prefix-dev.github.io/rattler-book/introduction/#getting-the-source
+          - paragraph [ref=e223]: "Clone the repository:"
+          - generic [ref=e225]:
+            - navigation [ref=e226]:
+              - button "Copy to clipboard" [ref=e227] [cursor=pointer]
+            - code [ref=e228]: git clone https://github.com/prefix-dev/rattler-book cd rattler-book
+          - heading "Running the examples ¶" [level=2] [ref=e229]:
+            - text: Running the examples
+            - link "¶" [ref=e230] [cursor=pointer]:
+              - /url: https://prefix-dev.github.io/rattler-book/introduction/#running-the-examples
+          - paragraph [ref=e231]:
+            - text: The easiest way to get started is with
+            - link "pixi" [ref=e232] [cursor=pointer]:
+              - /url: https://pixi.prefix.dev/latest/installation/
+            - text: ", which manages the Rust toolchain and all dependencies for you. I know it can be a hassle to install a new tool. I really do! But using pixi can familiarize you with what rattler can empower to build. Additionally, it will hopefully convince you that it's a very useful tool as well."
+          - paragraph [ref=e233]: "To test things its easy to run:"
+          - generic [ref=e235]:
+            - navigation [ref=e236]:
+              - button "Copy to clipboard" [ref=e237] [cursor=pointer]
+            - code [ref=e238]: "pixi r shot <cmd> # e.g pixi r shot init"
+          - paragraph
+          - paragraph [ref=e239]:
+            - text: The
+            - code [ref=e240]: run
+            - text: command uses pixi's tasks system to run tasks. In a way the task system is similar to
+            - link "mise" [ref=e241] [cursor=pointer]:
+              - /url: https://mise.jdx.dev/tasks/
+            - text: or
+            - link "just" [ref=e242] [cursor=pointer]:
+              - /url: https://github.com/casey/just
+            - text: .
+          - paragraph [ref=e243]: "To just build without running:"
+          - generic [ref=e245]:
+            - navigation [ref=e246]:
+              - button "Copy to clipboard" [ref=e247] [cursor=pointer]
+            - code [ref=e248]: "# Installs and runs t pixi run build"
+          - paragraph [ref=e249]:
+            - text: In our project we use a
+            - link "[dev]" [ref=e250] [cursor=pointer]:
+              - /url: https://pixi.prefix.dev/latest/build/dev/
+              - code [ref=e251]: "[dev]"
+            - text: table in
+            - code [ref=e252]: pixi.toml
+            - text: to pull in the Rust compiler and all build dependencies automatically via the
+            - code [ref=e253]: pixi-build-rust
+            - text: backend. These can then be used in conjunction with
+            - code [ref=e254]: run
+            - text: . No manual Rust installation required.
+          - paragraph [ref=e255]: "You can also build a distributable conda package:"
+          - generic [ref=e257]:
+            - navigation [ref=e258]:
+              - button "Copy to clipboard" [ref=e259] [cursor=pointer]
+            - code [ref=e260]: pixi build
+          - paragraph [ref=e261]:
+            - text: You can also install
+            - code [ref=e262]: moonshot
+            - text: "globally:"
+          - generic [ref=e264]:
+            - navigation [ref=e265]:
+              - button "Copy to clipboard" [ref=e266] [cursor=pointer]
+            - code [ref=e267]: "pixi global install --path . # it will be available as: shot init"
+          - paragraph [ref=e268]: Again, pixi automatically figures out what to install and how to build it.
+          - heading "Without pixi ¶" [level=3] [ref=e269]:
+            - text: Without pixi
+            - link "¶" [ref=e270] [cursor=pointer]:
+              - /url: https://prefix-dev.github.io/rattler-book/introduction/#without-pixi
+          - paragraph [ref=e271]:
+            - text: If you prefer to manage Rust yourself, you need Rust 1.82 or later. Install it with
+            - link "rustup" [ref=e272] [cursor=pointer]:
+              - /url: https://rustup.rs
+            - text: "and build with cargo:"
+          - generic [ref=e274]:
+            - navigation [ref=e275]:
+              - button "Copy to clipboard" [ref=e276] [cursor=pointer]
+            - code [ref=e277]: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh cargo build
+          - heading "Literate programming ¶" [level=2] [ref=e278]:
+            - text: Literate programming
+            - link "¶" [ref=e279] [cursor=pointer]:
+              - /url: https://prefix-dev.github.io/rattler-book/introduction/#literate-programming
+          - paragraph [ref=e280]:
+            - text: This book uses
+            - link "Entangled" [ref=e281] [cursor=pointer]:
+              - /url: https://entangled.github.io/
+            - text: ", a literate programming tool. The code blocks in each chapter are the actual source code. Entangled extracts them from the Markdown into real files that compile and run."
+          - paragraph [ref=e282]:
+            - text: Code blocks that produce a file carry a
+            - code [ref=e283]: file=
+            - text: "attribute. Here is a small (fake) program we will use to show how it works:"
+          - paragraph
+          - generic [ref=e284]:
+            - generic [ref=e285]:
+              - text: "file: examples/intro/hello.rs"
+              - button "View examples/intro/hello.rs in source viewer" [ref=e286] [cursor=pointer]: </>
+            - generic [ref=e287]:
+              - navigation [ref=e288]:
+                - button "Copy to clipboard" [ref=e289] [cursor=pointer]
+              - code [ref=e290]:
+                - link "<<intro-imports>>" [ref=e291] [cursor=pointer]:
+                  - /url: https://prefix-dev.github.io/rattler-book/introduction/#intro-imports
+                - text: "fn main() {"
+                - link "<<intro-prompt-greet>>" [ref=e292] [cursor=pointer]:
+                  - /url: https://prefix-dev.github.io/rattler-book/introduction/#intro-prompt-greet
+                - generic [ref=e293]:
+                  - text: "["
+                  - link "1" [ref=e294] [cursor=pointer]:
+                    - /url: https://prefix-dev.github.io/rattler-book/introduction/#intro-prompt-greet
+                  - text: ","
+                  - link "2" [ref=e295] [cursor=pointer]:
+                    - /url: https://prefix-dev.github.io/rattler-book/introduction/#intro-prompt-greet-1
+                  - text: "]"
+                - text: "}"
+          - paragraph
+          - generic [ref=e297] [cursor=pointer]: ⊕
+          - paragraph [ref=e298]:
+            - text: The
+            - code [ref=e299]:
+              - link "<<intro-prompt-greet>>" [ref=e300] [cursor=pointer]:
+                - /url: https://prefix-dev.github.io/rattler-book/introduction/#intro-prompt-greet
+              - generic [ref=e301]:
+                - text: "["
+                - link "1" [ref=e302] [cursor=pointer]:
+                  - /url: https://prefix-dev.github.io/rattler-book/introduction/#intro-prompt-greet
+                - text: ","
+                - link "2" [ref=e303] [cursor=pointer]:
+                  - /url: https://prefix-dev.github.io/rattler-book/introduction/#intro-prompt-greet-1
+                - text: "]"
+            - text: placeholder refers to a named block. When the same name appears on multiple code blocks, Entangled appends them in order. This lets us explain each piece separately while they end up as one continuous block in the tangled output.
+          - paragraph [ref=e304]:
+            - text: The imports bring in
+            - code [ref=e305]: std::io
+            - text: "for reading from stdin:"
+          - paragraph
+          - generic [ref=e306]:
+            - generic [ref=e307]:
+              - text: "#intro-imports"
+              - 'button "View #intro-imports in source viewer" [ref=e308] [cursor=pointer]': </>
+            - generic [ref=e309]:
+              - navigation [ref=e310]:
+                - button "Copy to clipboard" [ref=e311] [cursor=pointer]
+              - code [ref=e312]: "use std::io::{self, Write};"
+          - paragraph
+          - generic [ref=e313]:
+            - text: "Used by:"
+            - 'link "file: examples/intro/hello.rs" [ref=e314] [cursor=pointer]':
+              - /url: https://prefix-dev.github.io/rattler-book/introduction/#file-examples-intro-hello-rs
+          - paragraph [ref=e315]: "First we print a prompt and flush stdout so it appears before we block on input:"
+          - paragraph
+          - generic [ref=e316]:
+            - generic [ref=e317]:
+              - text: "#intro-prompt-greet [1]"
+              - 'button "View #intro-prompt-greet in source viewer" [ref=e318] [cursor=pointer]': </>
+            - generic [ref=e319]:
+              - navigation [ref=e320]:
+                - button "Copy to clipboard" [ref=e321] [cursor=pointer]
+              - code [ref=e322]: print!("what is your name? "); io::stdout().flush().unwrap();
+          - paragraph
+          - generic [ref=e323]:
+            - text: "Used by:"
+            - 'link "file: examples/intro/hello.rs" [ref=e324] [cursor=pointer]':
+              - /url: https://prefix-dev.github.io/rattler-book/introduction/#file-examples-intro-hello-rs
+          - paragraph [ref=e325]: "Then we read a line and print a greeting:"
+          - paragraph
+          - generic [ref=e326]:
+            - generic [ref=e327]:
+              - text: "#intro-prompt-greet [2]"
+              - 'button "View #intro-prompt-greet in source viewer" [ref=e328] [cursor=pointer]': </>
+            - generic [ref=e329]:
+              - navigation [ref=e330]:
+                - button "Copy to clipboard" [ref=e331] [cursor=pointer]
+              - code [ref=e332]: "let mut name = String::new(); io::stdin().read_line(&mut name).unwrap(); println!(\"hello, {}!\", name.trim());"
+          - paragraph
+          - generic [ref=e333]:
+            - text: "Used by:"
+            - 'link "file: examples/intro/hello.rs" [ref=e334] [cursor=pointer]':
+              - /url: https://prefix-dev.github.io/rattler-book/introduction/#file-examples-intro-hello-rs
+          - paragraph [ref=e335]:
+            - text: "Entangled stitches these together: every"
+            - code [ref=e336]:
+              - link "<<intro-imports>>" [ref=e337] [cursor=pointer]:
+                - /url: https://prefix-dev.github.io/rattler-book/introduction/#intro-imports
+            - text: reference is replaced by the contents of the
+            - code [ref=e338]: "#intro-imports"
+            - text: block. This lets the book introduce code in the order that makes sense for reading, while the tangled output follows the order the compiler expects.
+          - paragraph [ref=e339]:
+            - text: Every code block that carries a
+            - code [ref=e340]: file=
+            - text: or
+            - code [ref=e341]: "#name"
+            - text: attribute has a small
+            - button "</>"
+            - text: button in its title bar. Clicking it opens the
+            - strong [ref=e342]: source viewer
+            - text: ", a slide-up panel where you can browse the full tangled files. The viewer scrolls directly to the corresponding section and highlights it briefly. You can also open the source viewer any time with the"
+            - code [ref=e343]: </>
+            - text: icon in the header bar.
+          - paragraph [ref=e344]:
+            - text: Inside the tangled files you will see marker comments like
+            - code [ref=e345]:
+              - text: // ~/~ begin
+              - link "<<intro-imports>>" [ref=e346] [cursor=pointer]:
+                - /url: https://prefix-dev.github.io/rattler-book/introduction/#intro-imports
+              - text: "[init]"
+            - text: that record where each block came from. They act as section separators; click the fold arrow in the gutter to collapse any section you are not interested in.
+          - paragraph [ref=e347]: "You can tangle all files with:"
+          - generic [ref=e349]:
+            - navigation [ref=e350]:
+              - button "Copy to clipboard" [ref=e351] [cursor=pointer]
+            - code [ref=e352]: pixi run tangle
+          - paragraph [ref=e353]: "And stitch source-file edits back into the Markdown with:"
+          - generic [ref=e355]:
+            - navigation [ref=e356]:
+              - button "Copy to clipboard" [ref=e357] [cursor=pointer]
+            - code [ref=e358]: pixi run stitch
+          - heading "Why build on conda? ¶" [level=2] [ref=e359]:
+            - text: Why build on conda?
+            - link "¶" [ref=e360] [cursor=pointer]:
+              - /url: https://prefix-dev.github.io/rattler-book/introduction/#why-build-on-conda
+          - paragraph [ref=e361]: "Here's why we chose conda as the foundation:"
+          - list [ref=e362]:
+            - listitem [ref=e363]:
+              - strong [ref=e364]: Existing packages.
+              - link "conda-forge" [ref=e365] [cursor=pointer]:
+                - /url: https://conda-forge.org
+              - text: has thousands of packages across Python, R, C++, Fortran, etc. Your language's packages can depend on native libraries that are already packaged on conda-forge.
+            - listitem [ref=e366]:
+              - strong [ref=e367]: Binary distribution.
+              - text: Packages ship as prebuilt binaries per platform. There is no compilation on the user's machine.
+            - listitem [ref=e368]:
+              - strong [ref=e369]: Isolated environments.
+              - text: Environments can be isolated from each other, think of python
+              - code [ref=e370]: .venv
+              - text: for example but with more native dependency types.
+            - listitem [ref=e371]:
+              - strong [ref=e372]: Mature tooling.
+              - link "rattler" [ref=e373] [cursor=pointer]:
+                - /url: https://github.com/conda/rattler
+              - text: provides a solver, installer, networking stack, and shell activation in reusable Rust crates.
+          - paragraph [ref=e374]: "That said, conda isn't always the right choice:"
+          - list [ref=e375]:
+            - listitem [ref=e376]:
+              - strong [ref=e377]: One version per package
+              - text: means dependency resolution is NP-complete and requires a SAT solver. If your ecosystem can tolerate duplicate versions (like Go or Nix), you avoid that complexity.
+          - paragraph [ref=e378]: I think that if your language depends on c compilation in any ways, like bindings or extensions then the case that use the conda ecosystem becomes very compelling.
+          - paragraph [ref=e379]: Continue on to the next chapter to get started. Or if you are up for getting your hands dirty, read below for more details regarding exercises in the book.
+          - heading "Exercises ¶" [level=2] [ref=e380]:
+            - text: Exercises
+            - link "¶" [ref=e381] [cursor=pointer]:
+              - /url: https://prefix-dev.github.io/rattler-book/introduction/#exercises
+          - paragraph [ref=e382]: "Most chapters include programming exercises. These are marked by difficulty, the following are examples:"
+          - generic [ref=e383]:
+            - text: · · ·
+            - paragraph [ref=e384]: Hello, rattler(easy)
+            - paragraph [ref=e385]:
+              - text: Write a short Rust program that prints the version of the
+              - code [ref=e386]: rattler_conda_types
+              - text: crate. This is a warm-up to make sure your toolchain is set up correctly.
+            - generic [ref=e387]:
+              - term [ref=e388]: "Expected behavior:"
+              - definition [ref=e389]:
+                - text: The program compiles and prints a version string such as
+                - code [ref=e390]: 0.29.0
+                - text: .
+          - generic [ref=e391]:
+            - text: · · ·
+            - paragraph [ref=e392]: Parse a MatchSpec(intermediate)
+            - generic [ref=e394] [cursor=pointer]: ⊕
+            - paragraph [ref=e395]:
+              - text: Given the string
+              - code [ref=e396]: python >=3.8,<4.0
+              - text: ", write a function that extracts the package name and version constraint using"
+              - code [ref=e397]: MatchSpec::from_str
+              - text: .
+            - generic [ref=e398]:
+              - term [ref=e399]: "Expected behavior:"
+              - definition [ref=e400]:
+                - text: Your function returns the package name
+                - code [ref=e401]: python
+                - text: and constraint
+                - code [ref=e402]: ">=3.8,<4.0"
+                - text: as separate values.
+          - generic [ref=e403]:
+            - text: · · ·
+            - paragraph [ref=e404]: Version ordering from scratch(hard)
+            - paragraph [ref=e405]:
+              - text: Without using rattler's built-in comparison, implement the conda version ordering algorithm for simple numeric versions like
+              - code [ref=e406]: 1.2.3
+              - text: vs
+              - code [ref=e407]: 1.10.0
+              - text: .
+            - generic [ref=e408]:
+              - term [ref=e409]: "Expected behavior:"
+              - definition [ref=e410]:
+                - text: Your comparison function agrees with
+                - code [ref=e411]: Version::from_str
+                - text: ordering for all pairs in a test suite of at least ten version strings.
+          - heading "Exercises with an AI tutor ¶" [level=3] [ref=e412]:
+            - text: Exercises with an AI tutor
+            - link "¶" [ref=e413] [cursor=pointer]:
+              - /url: https://prefix-dev.github.io/rattler-book/introduction/#exercises-with-an-ai-tutor
+          - paragraph [ref=e414]:
+            - text: The repository includes
+            - code [ref=e415]: TUTOR.md
+            - text: ", a system prompt that turns a coding agent into a guided tutor for the exercises. The tutor will"
+            - strong [ref=e416]: never
+            - text: write code for you. Instead, it asks questions, points you to relevant files, and reveals hints one step at a time as you work through each exercise.
+          - generic [ref=e418] [cursor=pointer]: ⊕
+          - paragraph [ref=e419]: Before you start an exercise, the tutor will ask how comfortable you are with Rust. If you are learning Rust alongside this book, the tutor will explain language concepts and link to documentation as they come up. If you already know Rust, it will focus on the rattler APIs and the moonshot codebase.
+          - paragraph [ref=e420]:
+            - text: To start a tutoring session, load
+            - code [ref=e421]: TUTOR.md
+            - text: "as a system prompt in your agent of choice:"
+          - paragraph [ref=e422]:
+            - strong [ref=e423]: Claude Code
+          - generic [ref=e425]:
+            - navigation [ref=e426]:
+              - button "Copy to clipboard" [ref=e427] [cursor=pointer]
+            - code [ref=e428]: claude --append-system-prompt-file TUTOR.md
+          - paragraph [ref=e429]:
+            - strong [ref=e430]: Cursor
+          - paragraph [ref=e431]:
+            - text: Create
+            - code [ref=e432]: .cursor/rules/tutor.mdc
+            - text: with
+            - code [ref=e433]: "alwaysApply: true"
+            - text: in the frontmatter and paste the contents of
+            - code [ref=e434]: TUTOR.md
+            - text: as the body.
+          - paragraph [ref=e435]:
+            - strong [ref=e436]: GitHub Copilot
+          - paragraph [ref=e437]:
+            - text: Copy the contents of
+            - code [ref=e438]: TUTOR.md
+            - text: into
+            - code [ref=e439]: .github/copilot-instructions.md
+            - text: at the repository root.
+          - paragraph [ref=e440]:
+            - strong [ref=e441]: OpenAI Codex CLI
+          - paragraph [ref=e442]:
+            - text: Copy the contents of
+            - code [ref=e443]: TUTOR.md
+            - text: into
+            - code [ref=e444]: .codex/instructions.md
+            - text: at the repository root.
+          - paragraph [ref=e445]:
+            - strong [ref=e446]: Other agents
+          - paragraph [ref=e447]:
+            - text: Copy the contents of
+            - code [ref=e448]: TUTOR.md
+            - text: into your agent's system prompt or custom instructions field.
+          - paragraph [ref=e449]: Once the session starts, tell the tutor which exercise you want to work on (e.g., "exercise 3.1") and it will guide you from there.
+      - button "Back to top":
+        - img
+        - text: Back to top
+    - contentinfo [ref=e450]:
+      - navigation "Footer" [ref=e451]:
+        - 'link "Previous: Cover" [ref=e452] [cursor=pointer]':
+          - /url: https://prefix-dev.github.io/rattler-book/
+          - img [ref=e454]
+          - generic [ref=e456]:
+            - text: Previous
+            - generic [ref=e457]: Cover
+        - 'link "Next: 1. What Is a Package Manager?" [ref=e458] [cursor=pointer]':
+          - /url: https://prefix-dev.github.io/rattler-book/ch01-what-is-a-package-manager/
+          - generic [ref=e459]:
+            - text: Next
+            - generic [ref=e460]: 1. What Is a Package Manager?
+          - img [ref=e462]
+      - generic [ref=e466]:
+        - text: Made with
+        - link "Material for MkDocs" [ref=e467] [cursor=pointer]:
+          - /url: https://squidfunk.github.io/mkdocs-material/
+  - dialog "Project Files" [ref=e469]:
+    - generic [ref=e471]:
+      - generic [ref=e472]: Project Files
+      - button "Close source viewer" [active] [ref=e473] [cursor=pointer]: ×
+    - navigation "File tree" [ref=e474]:
+      - tree [ref=e475]:
+        - treeitem "examples" [ref=e476]:
+          - button "examples" [expanded] [ref=e477] [cursor=pointer]:
+            - generic [ref=e478]: ▶
+            - text: examples
+          - group [ref=e481]:
+            - treeitem "intro" [ref=e482]:
+              - button "intro" [expanded] [ref=e483] [cursor=pointer]:
+                - generic [ref=e484]: ▶
+                - text: intro
+              - group [ref=e487]:
+                - treeitem "examples/intro/hello.rs" [ref=e488]:
+                  - button "examples/intro/hello.rs" [ref=e489] [cursor=pointer]: hello.rs
+        - treeitem "src" [ref=e491]:
+          - button "src" [expanded] [ref=e492] [cursor=pointer]:
+            - generic [ref=e493]: ▶
+            - text: src
+          - group [ref=e496]:
+            - treeitem "commands" [ref=e497]:
+              - button "commands" [expanded] [ref=e498] [cursor=pointer]:
+                - generic [ref=e499]: ▶
+                - text: commands
+              - group [ref=e502]:
+                - treeitem "src/commands/add.rs" [ref=e503]:
+                  - button "src/commands/add.rs" [ref=e504] [cursor=pointer]: add.rs
+                - treeitem "src/commands/build.rs" [ref=e506]:
+                  - button "src/commands/build.rs" [ref=e507] [cursor=pointer]: build.rs
+                - treeitem "src/commands/init.rs" [ref=e509]:
+                  - button "src/commands/init.rs" [ref=e510] [cursor=pointer]: init.rs
+                - treeitem "src/commands/install.rs" [ref=e512]:
+                  - button "src/commands/install.rs" [ref=e513] [cursor=pointer]: install.rs
+                - treeitem "src/commands/lock.rs" [ref=e515]:
+                  - button "src/commands/lock.rs" [ref=e516] [cursor=pointer]: lock.rs
+                - treeitem "src/commands/mod.rs" [ref=e518]:
+                  - button "src/commands/mod.rs" [ref=e519] [cursor=pointer]: mod.rs
+                - treeitem "src/commands/run.rs" [ref=e521]:
+                  - button "src/commands/run.rs" [ref=e522] [cursor=pointer]: run.rs
+                - treeitem "src/commands/search.rs" [ref=e524]:
+                  - button "src/commands/search.rs" [ref=e525] [cursor=pointer]: search.rs
+                - treeitem "src/commands/shell_hook.rs" [ref=e527]:
+                  - button "src/commands/shell_hook.rs" [ref=e528] [cursor=pointer]: shell_hook.rs
+            - treeitem "src/build_backend.rs" [ref=e530]:
+              - button "src/build_backend.rs" [ref=e531] [cursor=pointer]: build_backend.rs
+            - treeitem "src/build_prelude.lua" [ref=e533]:
+              - button "src/build_prelude.lua" [ref=e534] [cursor=pointer]: build_prelude.lua
+            - treeitem "src/client.rs" [ref=e536]:
+              - button "src/client.rs" [ref=e537] [cursor=pointer]: client.rs
+            - treeitem "src/environment.rs" [ref=e539]:
+              - button "src/environment.rs" [ref=e540] [cursor=pointer]: environment.rs
+            - treeitem "src/lock.rs" [ref=e542]:
+              - button "src/lock.rs" [ref=e543] [cursor=pointer]: lock.rs
+            - treeitem "src/main.rs" [ref=e545]:
+              - button "src/main.rs" [ref=e546] [cursor=pointer]: main.rs
+            - treeitem "src/manifest.rs" [ref=e548]:
+              - button "src/manifest.rs" [ref=e549] [cursor=pointer]: manifest.rs
+            - treeitem "src/progress.rs" [ref=e551]:
+              - button "src/progress.rs" [ref=e552] [cursor=pointer]: progress.rs
+            - treeitem "src/project.rs" [ref=e554]:
+              - button "src/project.rs" [ref=e555] [cursor=pointer]: project.rs
+            - treeitem "src/session.rs" [ref=e557]:
+              - button "src/session.rs" [ref=e558] [cursor=pointer]: session.rs
+        - treeitem "Cargo.toml" [ref=e560]:
+          - button "Cargo.toml" [ref=e561] [cursor=pointer]: Cargo.toml
+      - generic [ref=e563]:
+        - generic [ref=e564]:
+          - generic [ref=e565]: »
+          - text: literate block
+        - generic [ref=e566]:
+          - generic [ref=e567]: ▸
+          - text: code fold
+    - generic [ref=e572]: Select a file to view

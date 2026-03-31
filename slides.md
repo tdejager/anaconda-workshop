@@ -234,7 +234,46 @@ drawings:
 
 ---
 
-<!-- Slide 3: Why this book? -->
+<!-- Slide 3: Schedule overview -->
+
+# <span class="newthought">Schedule</span>
+
+Two afternoons, 2 hours 20 minutes each.
+
+<div class="flex gap-16 mt-8">
+<div class="flex-1">
+
+### Day 1 · <span class="muted">Today</span>
+
+<div class="schedule-grid mt-4">
+  <span class="time">15:30</span> <span>This intro + setup</span>
+  <span class="time">15:50</span> <span>Pick a chapter, start exercises</span>
+  <span class="time">~17:00</span> <span>Check-in / questions</span>
+  <span class="time">17:50</span> <span>Wrap up</span>
+</div>
+
+</div>
+<div class="flex-1">
+
+### Day 2 · <span class="muted">Tomorrow</span>
+
+<div class="schedule-grid mt-4">
+  <span class="time">15:30</span> <span>Continue exercises <em>or</em></span>
+  <span class="time"></span> <span>switch to rattler PRs</span>
+  <span class="time">~17:00</span> <span>Check-in / questions</span>
+  <span class="time">17:50</span> <span>Wrap up + retro</span>
+</div>
+
+<p class="muted mt-6" style="font-size:0.95rem!important;">
+Day 2 PR backlog: <a href="https://docs.google.com/document/d/1x-7l9eOZJhjv3SMVKcVGMXj8NkEvgK_jzNR_Ua6YD-c/edit?usp=sharing">rattler PR planning doc</a>
+</p>
+
+</div>
+</div>
+
+---
+
+<!-- Slide 4: Why this book? -->
 
 # <span class="newthought">Why this book?</span>
 
@@ -516,45 +555,6 @@ claude --append-system-prompt-file TUTOR.md
 
 - Use `TUTOR.md` as the system prompt
 
-</div>
-
----
-
-<!-- Slide 8: Schedule overview -->
-
-# <span class="newthought">Schedule</span>
-
-Two afternoons, 2 hours 20 minutes each.
-
-<div class="flex gap-16 mt-8">
-<div class="flex-1">
-
-### Day 1 · <span class="muted">Today</span>
-
-<div class="schedule-grid mt-4">
-  <span class="time">15:30</span> <span>This intro + setup</span>
-  <span class="time">15:50</span> <span>Pick a chapter, start exercises</span>
-  <span class="time">~17:00</span> <span>Check-in / questions</span>
-  <span class="time">17:50</span> <span>Wrap up</span>
-</div>
-
-</div>
-<div class="flex-1">
-
-### Day 2 · <span class="muted">Tomorrow</span>
-
-<div class="schedule-grid mt-4">
-  <span class="time">15:30</span> <span>Continue exercises <em>or</em></span>
-  <span class="time"></span> <span>switch to rattler PRs</span>
-  <span class="time">~17:00</span> <span>Check-in / questions</span>
-  <span class="time">17:50</span> <span>Wrap up + retro</span>
-</div>
-
-<p class="muted mt-6" style="font-size:0.95rem!important;">
-Day 2 PR backlog: <a href="https://docs.google.com/document/d/1x-7l9eOZJhjv3SMVKcVGMXj8NkEvgK_jzNR_Ua6YD-c/edit?usp=sharing">rattler PR planning doc</a>
-</p>
-
-</div>
 </div>
 
 ---

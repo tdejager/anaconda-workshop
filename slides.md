@@ -316,7 +316,7 @@ $ shot run lua -e "require('lumen')"
 
 The book implements **moonshot** command by command:
 
-<ul class="chapter-list mt-6">
+<ul class="chapter-list mt-4">
   <li><span class="ch">03</span> <code>init</code> · scaffold a project manifest</li>
   <li><span class="ch">04</span> <code>search</code> · query conda channels</li>
   <li><span class="ch">05</span> <code>add</code> · add packages to the manifest</li>
@@ -327,9 +327,7 @@ The book implements **moonshot** command by command:
   <li><span class="ch">10</span> <code>build</code> · build conda packages</li>
 </ul>
 
-<p class="muted mt-6" style="font-size:0.95rem!important;">
-Plus deep dives into the conda format, virtual packages, networking, the Resolvo SAT solver, and the Rattler crates.
-</p>
+<Sparkline />
 
 ---
 
@@ -453,7 +451,7 @@ The book is written as a **literate program**. All source code lives inside the 
 
 # <span class="newthought">Using the book</span>
 
-The header has a few buttons worth knowing about.
+[prefix-dev.github.io/rattler-book](https://prefix-dev.github.io/rattler-book/). The header has a few buttons worth knowing about.
 
 <div class="mt-4">
   <NavbarAnnotated />
@@ -608,20 +606,6 @@ The Rust compiler is your best teacher.
 
 </div>
 </div>
-
----
-
-<!-- Slide 10: Moonshot complexity sparkline -->
-
-# <span class="newthought">Moonshot</span> in a nutshell
-
-From `init` to `build`, each command adds a layer of complexity.
-
-<Sparkline />
-
-<p class="muted mt-4" style="font-size:0.95rem!important;">
-The SAT solver, linking, and package building are where the real fun begins.
-</p>
 
 ---
 layout: center

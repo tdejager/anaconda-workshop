@@ -338,6 +338,7 @@ The book implements **moonshot**:
 Each chapter (3 through 10) has **3 exercises** graded by difficulty.
 
 <table class="exercise-table mt-6">
+    <tbody>
   <tr>
     <th>difficulty</th>
     <th>example</th>
@@ -358,6 +359,7 @@ Each chapter (3 through 10) has **3 exercises** graded by difficulty.
     <td>Stacked environment activation</td>
     <td>Design decisions, multiple subsystems</td>
   </tr>
+    </tbody>
 </table>
 
 <div class="mt-6">
@@ -622,3 +624,175 @@ layout: center
     <img src="/prefix_logo.svg" alt="prefix.dev" style="height:36px;" />
   </div>
 </div>
+
+---
+layout: center
+---
+
+  <div class="logo-row" style="margin-top:2rem;">
+    <img src="/anaconda_logo.png" alt="Anaconda" style="height:22px;" />
+    <span class="muted" style="font-size:1.3rem;">×</span>
+    <img src="/prefix_logo.svg" alt="prefix.dev" style="height:22px;" />
+  </div>
+<div class="flex flex-col items-center mt-8 justify-center gap-8">
+  <h1 style="font-size:3rem!important;">Day 2</h1>
+  <p class="muted" style="font-size:1.2rem!important;">
+      Some additional notes:
+  </p>
+</div>
+
+
+
+---
+
+
+# Day 2 Schedule:
+
+
+<div class="schedule-grid mt-4">
+  <span class="time">15:30</span> <span>Continue exercises <em>or</em></span>
+  <span class="time"></span> <span> => switch to rattler PRs</span>
+  <span class="time">17:40</span> <span>Wrap up + feedback + TIL</span>
+</div>
+
+---
+
+<!-- Slide: rust-analyzer setup -->
+
+# <span class="newthought">Setting up rust-analyzer</span>
+
+For the best Rust editing experience, install the **rust-analyzer** extension in VS Code.
+
+<div class="flex gap-10 mt-6">
+<div class="flex-1">
+
+**Install the extension**
+
+1. Open VS Code
+2. Press `Ctrl+Shift+X` (or `Cmd+Shift+X` on macOS) to open Extensions
+3. Search for **rust-analyzer**
+4. Click **Install** on the one by *rust-lang*
+
+</div>
+<div class="flex-1">
+
+**What it gives you**
+
+- Inline type hints and error diagnostics
+- Go-to-definition, find references
+- Code completion for Rattler APIs
+- Automatic `cargo check` on save
+- Refactoring support (rename, extract, etc.)
+
+</div>
+</div>
+
+---
+layout: center
+---
+
+## No system Rust?
+Launch VS Code from the pixi environment so rust-analyzer can find <code>cargo</code> and <code>rustc</code>:
+
+```bash
+pixi shell
+code .
+```
+<br />
+<br />
+
+## Feeling experimental!?
+
+Want to try my favorite editing experience:
+
+```bash
+pixi global install zed
+```
+
+This will prompt to install `rust-analyzer` for you.
+
+---
+
+# Day 2. Excerices
+
+Jaime found a part of the code that was pretty inefficient (ch04 search):
+
+```rust
+    // Collect and deduplicate results by (name, version), keeping the latest.
+    let mut seen: HashMap<(String, String), String> = HashMap::new();
+    for repo in &repo_data {
+        for record in repo.iter() {
+            let name = record.package_record.name.as_normalized().to_string();
+            let version = record.package_record.version.to_string();
+            let key = (name.clone(), version.clone());
+            seen.entry(key).or_insert_with(|| name);
+        }
+    }
+```
+---
+
+Can be replaced with:
+
+```rust
+    // ~/~ begin <<book/src/ch04-search.md#search-results>>[init]
+    // Collect and deduplicate results by (name, version), keeping the latest.
+    let mut seen: HashMap<(PackageName, VersionWithSource), PackageName> = HashMap::new();
+    for repo in &repo_data {
+        for record in repo.iter() {
+            let name = record.package_record.name.clone();
+            let version = record.package_record.version.clone();
+            let key = (name.clone(), version);
+            seen.entry(key).or_insert_with(|| name);
+        }
+    }
+```
+You can also try further eliding the types, take away the: <code>`HashMap<(_, _), _>`</code>  part.
+
+You can also try to save the custom build data into a struct:
+
+```rust
+// Figure out the correct derives here to make the sorting below work
+struct PackageData {
+    pub name: PackageName,
+    pub version: VersionWithSource,
+    // etc.
+}
+```
+---
+
+Or even a with a lifetime!
+
+```rust
+struct PackageData<'a> {
+    pub name: &'a PackageName,
+    pub version: &'a VersionWithSource,
+    // etc.
+}
+```
+
+---
+
+# Rattler PR's
+
+Feel free to continue on improving rattler binary if you like: [Click for Doc](https://docs.google.com/document/d/1x-7l9eOZJhjv3SMVKcVGMXj8NkEvgK_jzNR_Ua6YD-c)
+
+Finished:
+
+* `rattler run`: https://github.com/conda/rattler/pull/2263 (needs a review?)
+* `rattler create` (cli alignment): https://github.com/conda/rattler/pull/2264
+
+Still open?
+
+* `rattler history`
+* `rattler auth` (for anaconda)
+* `rattler upload`
+* `rattler exec`
+* `rattler compare/diff`
+* `rattler export` Gangadeep said he wanted to work on this
+
+---
+layout: center
+---
+
+
+# Good luck and have fun!
